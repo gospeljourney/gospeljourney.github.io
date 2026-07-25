@@ -1,0 +1,65 @@
+:root {
+  --vp-font-family-base:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Segoe UI",
+    sans-serif;
+  --vp-c-brand-1: #2f5d50;
+  --vp-c-brand-2: #3f7465;
+  --vp-c-brand-3: #4f8b78;
+  --vp-c-brand-soft: rgba(47, 93, 80, 0.14);
+  --vp-home-hero-name-color: #2f5d50;
+}
+
+.dark {
+  --vp-c-brand-1: #8cc7b5;
+  --vp-c-brand-2: #76b4a1;
+  --vp-c-brand-3: #62a18e;
+  --vp-c-brand-soft: rgba(140, 199, 181, 0.14);
+  --vp-home-hero-name-color: #8cc7b5;
+}
+
+.VPHomeHero .name,
+.VPHomeHero .text,
+.VPHomeHero .tagline {
+  word-break: keep-all;
+}
+
+.entry-page {
+  display: grid;
+  min-height: 50vh;
+  place-content: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.entry-page h1,
+.entry-page p {
+  margin: 0;
+}
+
+.entry-page a {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+  text-underline-offset: 0.2em;
+}
+
+.entry-page a:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 4px;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 640px) {
+  .VPHomeHero .name,
+  .VPHomeHero .text {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .entry-page {
+    padding: 1.5rem;
+  }
+}
