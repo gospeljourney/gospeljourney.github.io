@@ -1,28 +1,48 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "The Way",
-  description: "An Open Journey Through the Gospel",
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+  lang: 'ko-KR',
+  title: 'The Way',
+  titleTemplate: false,
+  description: 'An Open Journey Through the Gospel',
+  cleanUrls: true,
+  lastUpdated: true,
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+  themeConfig: {
+    siteTitle: 'The Way',
+
+    nav: [
+      { text: '홈', link: '/ko/' }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      {
+        icon: 'github',
+        link: 'https://github.com/gospeljourney'
+      }
+    ],
+
+    outline: {
+      label: '이 페이지의 내용',
+      level: [2, 3]
+    },
+
+    docFooter: {
+      prev: '이전',
+      next: '다음'
+    },
+
+    lastUpdated: {
+      text: '마지막 수정'
+    },
+
+    returnToTopLabel: '맨 위로',
+    sidebarMenuLabel: '메뉴',
+    darkModeSwitchLabel: '화면 테마',
+
+    footer: {
+      message: 'An Open Journey Through the Gospel',
+      copyright: 'Copyright © The Way'
+    }
   }
 })
