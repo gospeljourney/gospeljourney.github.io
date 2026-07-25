@@ -1,7 +1,9 @@
 .local
 .local/
 .worktrees/
+.codex
 .codex/
+.agents
 .agents/
 AGENTS.md
 .codex/AGENTS.md
