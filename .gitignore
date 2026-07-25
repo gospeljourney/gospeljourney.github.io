@@ -2,6 +2,7 @@
 .local/
 .worktrees/
 .codex/
+.agents/
 AGENTS.md
 .codex/AGENTS.md
 .codex/scripts/
