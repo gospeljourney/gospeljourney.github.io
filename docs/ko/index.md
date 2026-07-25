@@ -6,6 +6,10 @@ hero:
   name: The Way
   text: 복음을 배우고 이해하며 삶으로 살아 내는 여정
   tagline: An Open Journey Through the Gospel
+  actions:
+    - theme: brand
+      text: GitHub에서 보기
+      link: https://github.com/gospeljourney/gospeljourney.github.io
 
 features:
   - title: 한국어 원문
