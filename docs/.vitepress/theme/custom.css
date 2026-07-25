@@ -27,6 +27,10 @@
   word-break: keep-all;
 }
 
+.VPHome {
+  margin-bottom: 96px;
+}
+
 .entry-page {
   display: grid;
   min-height: 50vh;
@@ -61,5 +65,11 @@
 
   .entry-page {
     padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .VPHome {
+    margin-bottom: 128px;
   }
 }
