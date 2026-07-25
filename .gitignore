@@ -1,4 +1,5 @@
 .local/
 .worktrees/
 AGENTS.md
-.codex/agent.md
+.codex/AGENTS.md
+.codex/scripts/
