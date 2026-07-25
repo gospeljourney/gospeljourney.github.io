@@ -6,3 +6,6 @@ AGENTS.md
 .codex/AGENTS.md
 .codex/scripts/
 .orca/
+node_modules/
+docs/.vitepress/cache/
+docs/.vitepress/dist/

@@ -1,0 +1,17 @@
+{
+  "name": "gospeljourney",
+  "version": "1.0.0",
+  "description": "An Open Journey Through the Gospel",
+  "private": true,
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
