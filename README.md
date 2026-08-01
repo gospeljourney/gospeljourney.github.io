@@ -1,6 +1,6 @@
-# The Way
+# Gospel Journey
 
-[The Way](https://gospeljourney.github.io/) is an open learning journey for people who want to learn, understand, and live the Gospel. The public site is built with VitePress and published as a static GitHub Pages site.
+[Gospel Journey](https://gospeljourney.github.io/) is an open learning journey for people who want to learn, understand, and live the Gospel. The public site is built with VitePress and published as a static GitHub Pages site.
 
 ## Current language scope
 

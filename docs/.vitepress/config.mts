@@ -8,14 +8,14 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'ko-KR',
-  title: 'The Way',
+  title: 'Gospel Journey',
   titleTemplate: false,
   description: 'An Open Journey Through the Gospel',
   cleanUrls: true,
   lastUpdated: true,
 
   themeConfig: {
-    siteTitle: 'The Way',
+    siteTitle: 'Gospel Journey',
 
     nav: [
       { text: '홈', link: '/ko/' }
@@ -48,7 +48,7 @@ export default defineConfig({
 
     footer: {
       message: 'An Open Journey Through the Gospel',
-      copyright: 'Copyright © The Way'
+      copyright: 'Copyright © Gospel Journey'
     }
   }
 })
