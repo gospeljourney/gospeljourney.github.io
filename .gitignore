@@ -12,3 +12,7 @@ AGENTS.md
 node_modules/
 docs/.vitepress/cache/
 docs/.vitepress/dist/
+
+# 강의 오디오는 저장소에 커밋하지 않는다 (ADR-010).
+# 로컬 검증용으로 여기에 파일을 두더라도 Git 에 들어가면 안 된다.
+docs/public/audio/

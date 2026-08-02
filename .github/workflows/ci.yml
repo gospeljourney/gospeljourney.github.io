@@ -38,3 +38,6 @@ jobs:
 
       - name: Build VitePress
         run: npm run docs:build
+
+      - name: Check audio cue anchors
+        run: npm run anchors:check

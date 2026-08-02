@@ -171,3 +171,52 @@ test('audio-shape: 올바른 audio 블록은 통과', () => {
   ])
   assert.deepEqual(issues, [])
 })
+
+test('cue-timecode: duration 을 넘는 타임코드는 오류', () => {
+  const issues = validateCourses([
+    course({
+      lessons: [
+        entry({
+          audio: { file: 'a.mp3', duration: 100 },
+          cues: [{ raw: '2:00', t: 120 }],
+        }),
+      ],
+    }),
+  ])
+  assert.deepEqual(rules(issues), ['cue-timecode'])
+})
+
+test('cue-timecode: 형식이 틀린 타임코드는 오류', () => {
+  const issues = validateCourses([
+    course({
+      lessons: [
+        entry({
+          audio: { file: 'a.mp3', duration: 100 },
+          cues: [{ raw: '5:60', t: null }],
+        }),
+      ],
+    }),
+  ])
+  assert.deepEqual(rules(issues), ['cue-timecode'])
+})
+
+test('cue-timecode: 범위 안이면 통과', () => {
+  const issues = validateCourses([
+    course({
+      lessons: [
+        entry({
+          audio: { file: 'a.mp3', duration: 2371 },
+          cues: [{ raw: '0:00', t: 0 }, { raw: '39:31', t: 2371 }],
+        }),
+      ],
+    }),
+  ])
+  assert.deepEqual(issues, [])
+})
+
+test('cue-without-audio: audio 없이 AudioCue 만 있으면 오류', () => {
+  const issues = validateCourses([
+    course({ lessons: [entry({ cues: [{ raw: '0:00', t: 0 }] })] }),
+  ])
+  assert.deepEqual(rules(issues), ['cue-without-audio'])
+})

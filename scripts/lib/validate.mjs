@@ -116,6 +116,28 @@ export function validateCourses(courses, locale = 'ko') {
           )
         }
       }
+
+      const cues = entry.cues ?? []
+      if (cues.length > 0 && !entry.audio) {
+        add(
+          entry.file,
+          'cue-without-audio',
+          'AudioCue 가 있지만 audio frontmatter 가 없습니다.'
+        )
+      }
+
+      const duration = entry.audio?.duration
+      if (typeof duration === 'number') {
+        for (const cue of cues) {
+          if (cue.t === null || cue.t === undefined || cue.t < 0 || cue.t > duration) {
+            add(
+              entry.file,
+              'cue-timecode',
+              `AudioCue t="${cue.raw}" 가 0~${duration}초 범위를 벗어나거나 형식이 잘못되었습니다.`
+            )
+          }
+        }
+      }
     }
   }
 

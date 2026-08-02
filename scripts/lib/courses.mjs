@@ -2,6 +2,8 @@ import matter from 'gray-matter'
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
+import { parseTimecode } from './timecode.mjs'
+
 export const ALL_STATUSES = new Set([
   'source',
   'draft',
@@ -11,6 +13,26 @@ export const ALL_STATUSES = new Set([
 ])
 
 export const PUBLIC_STATUSES = new Set(['source', 'reviewed'])
+
+const CUE_TAG = /<AudioCue\b([^>]*?)\/?>/g
+
+/** 태그 속성 문자열에서 name="value" 를 뽑는다. */
+function readAttribute(attributes, name) {
+  const match = attributes.match(new RegExp(`${name}\\s*=\\s*"([^"]*)"`))
+  return match ? match[1] : undefined
+}
+
+/** 본문에서 <AudioCue> 를 나타난 순서대로 뽑는다. */
+export function extractCues(body) {
+  const cues = []
+  for (const match of body.matchAll(CUE_TAG)) {
+    const attributes = match[1] ?? ''
+    const raw = readAttribute(attributes, 't')
+    if (raw === undefined) continue
+    cues.push({ raw, t: parseTimecode(raw), note: readAttribute(attributes, 'note') })
+  }
+  return cues
+}
 
 /**
  * 저장소의 docs/ 기준 상대 경로를 사이트 링크로 바꾼다.
@@ -35,7 +57,7 @@ function toDateString(value) {
  * 파일시스템을 건드리지 않는 순수 함수다.
  */
 export function parseContentFile(relPath, raw) {
-  const { data } = matter(raw)
+  const { data, content } = matter(raw)
   const segments = relPath.split('/')
   const base = segments[segments.length - 1]
   const dir = segments[segments.length - 2]
@@ -59,6 +81,8 @@ export function parseContentFile(relPath, raw) {
     notes: data.notes,
     lessonRef: data.lessonRef,
     audio: data.audio,
+    body: content,
+    cues: extractCues(content),
   }
 }
 

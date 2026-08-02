@@ -217,3 +217,51 @@ test('loadCourses: 과정을 slug 사전순으로 정렬한다', () => {
     rmSync(root, { recursive: true, force: true })
   }
 })
+
+test('parseContentFile: 본문을 body 로 보존한다', () => {
+  const raw = '---\nid: x\ntitle: 제목\n---\n\n# 제목\n\n본문 한 줄\n'
+  const parsed = parseContentFile('ko/courses/x/01-a.md', raw)
+  assert.match(parsed.body, /본문 한 줄/)
+  assert.doesNotMatch(parsed.body, /^id: x/m)
+})
+
+test('parseContentFile: AudioCue 를 순서대로 뽑는다', () => {
+  const raw = [
+    '---',
+    'id: x',
+    'title: 제목',
+    '---',
+    '',
+    '## 1. 첫 단원',
+    '',
+    '<AudioCue t="0:00" note="#첫-단원" />',
+    '',
+    '## 2. 다음 단원',
+    '',
+    '<AudioCue t="5:57" />',
+  ].join('\n')
+
+  const { cues } = parseContentFile('ko/courses/x/01-a.md', raw)
+
+  assert.equal(cues.length, 2)
+  assert.deepEqual(cues[0], { raw: '0:00', t: 0, note: '#첫-단원' })
+  assert.deepEqual(cues[1], { raw: '5:57', t: 357, note: undefined })
+})
+
+test('parseContentFile: 속성 순서가 바뀌어도 읽는다', () => {
+  const raw = '---\nid: x\ntitle: 제목\n---\n\n<AudioCue note="#a" t="1:00" />\n'
+  const { cues } = parseContentFile('ko/courses/x/01-a.md', raw)
+  assert.deepEqual(cues[0], { raw: '1:00', t: 60, note: '#a' })
+})
+
+test('parseContentFile: 형식이 틀린 타임코드는 t 가 null 이고 raw 는 남는다', () => {
+  const raw = '---\nid: x\ntitle: 제목\n---\n\n<AudioCue t="5:60" />\n'
+  const { cues } = parseContentFile('ko/courses/x/01-a.md', raw)
+  assert.equal(cues[0].t, null)
+  assert.equal(cues[0].raw, '5:60')
+})
+
+test('parseContentFile: AudioCue 가 없으면 빈 배열', () => {
+  const raw = '---\nid: x\ntitle: 제목\n---\n\n# 제목\n'
+  assert.deepEqual(parseContentFile('ko/courses/x/01-a.md', raw).cues, [])
+})
