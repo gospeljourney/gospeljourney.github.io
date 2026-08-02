@@ -13,6 +13,7 @@
     "test": "node --test \"scripts/**/*.test.mjs\"",
     "content:check": "node scripts/validate-content.mjs",
     "anchors:check": "node scripts/check-audio-anchors.mjs",
+    "brand:check": "node scripts/check-brand-asset-contrast.mjs",
     "brand:build": "node scripts/build-brand-assets.mjs"
   },
   "devDependencies": {
