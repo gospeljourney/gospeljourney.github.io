@@ -24,9 +24,11 @@ const counterpart = computed(() => frontmatter.value.notes ?? frontmatter.value.
 const counterpartLabel = computed(() =>
   frontmatter.value.notes ? '강의 노트에서 자세히' : '교안으로'
 )
-const counterpartHref = computed(() =>
-  props.note && counterpart.value ? `${counterpart.value}${props.note}` : null
-)
+const counterpartHref = computed(() => {
+  if (!props.note || !counterpart.value) return null
+  const anchor = props.note.replace(/^#/, '').normalize('NFKD')
+  return `${counterpart.value}#${anchor}`
+})
 
 function play() {
   if (seconds.value !== null) requestSeek(seconds.value)
