@@ -12,7 +12,8 @@
     "docs:preview": "vitepress preview docs",
     "test": "node --test \"scripts/**/*.test.mjs\"",
     "content:check": "node scripts/validate-content.mjs",
-    "anchors:check": "node scripts/check-audio-anchors.mjs"
+    "anchors:check": "node scripts/check-audio-anchors.mjs",
+    "brand:build": "node scripts/build-brand-assets.mjs"
   },
   "devDependencies": {
     "@fontsource/eb-garamond": "^5.3.0",
