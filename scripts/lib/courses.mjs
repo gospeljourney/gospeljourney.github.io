@@ -1,4 +1,6 @@
 import matter from 'gray-matter'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
 
 export const ALL_STATUSES = new Set([
   'source',
@@ -57,5 +59,47 @@ export function parseContentFile(relPath, raw) {
     notes: data.notes,
     lessonRef: data.lessonRef,
     audio: data.audio,
+  }
+}
+
+/**
+ * docsDir/<locale>/courses/ 아래의 과정을 모두 읽는다.
+ * docsDir 는 VitePress 의 docs 디렉터리 절대 경로다.
+ */
+export function loadCourses(docsDir, locale) {
+  const coursesDir = join(docsDir, locale, 'courses')
+  if (!existsSync(coursesDir)) return []
+
+  const slugs = readdirSync(coursesDir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
+    .sort()
+
+  return slugs.map((slug) => readCourse(coursesDir, locale, slug))
+}
+
+function readCourse(coursesDir, locale, slug) {
+  const dir = join(coursesDir, slug)
+  const fileNames = readdirSync(dir, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.endsWith('.md'))
+    .map((entry) => entry.name)
+    .sort()
+
+  const parsed = fileNames.map((name) => {
+    const relPath = `${locale}/courses/${slug}/${name}`
+    return parseContentFile(relPath, readFileSync(join(dir, name), 'utf8'))
+  })
+
+  const index = parsed.find((entry) => entry.kind === 'course') ?? null
+  const byLesson = (a, b) => (a.lesson ?? 0) - (b.lesson ?? 0)
+
+  return {
+    slug,
+    title: index?.title ?? slug,
+    description: index?.description,
+    link: `/${locale}/courses/${slug}/`,
+    index,
+    lessons: parsed.filter((entry) => entry.kind === 'lesson').sort(byLesson),
+    notes: parsed.filter((entry) => entry.kind === 'notes').sort(byLesson),
   }
 }
