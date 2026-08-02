@@ -6,6 +6,9 @@ hero:
   name: Gospel Journey
   text: 복음을 배우고 이해하며 삶으로 살아 내는 여정
   tagline: An Open Journey Through the Gospel
+  image:
+    src: /brand/symbol.svg
+    alt: Gospel Journey 심볼
   actions:
     - theme: brand
       text: 과정 살펴보기

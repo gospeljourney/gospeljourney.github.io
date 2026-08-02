@@ -41,3 +41,6 @@ jobs:
 
       - name: Check audio cue anchors
         run: npm run anchors:check
+
+      - name: Check brand asset contrast
+        run: npm run brand:check
