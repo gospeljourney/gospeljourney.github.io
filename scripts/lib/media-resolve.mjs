@@ -7,6 +7,7 @@
  */
 export function resolveAudioSources(file, region, base) {
   if (!file) return []
+  if (file.startsWith('http://') || file.startsWith('https://')) return [file]
   if (file.startsWith('/')) return [file]
 
   const bases = []

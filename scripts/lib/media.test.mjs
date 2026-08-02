@@ -47,3 +47,24 @@ test('resolveAudioSources: 베이스 끝 슬래시 유무를 흡수한다', () =
     ['https://x.test/a.mp3']
   )
 })
+
+test('resolveAudioSources: https 절대 URL을 그대로 돌려준다', () => {
+  assert.deepEqual(
+    resolveAudioSources('https://r2.example.com/lwt-gospel/00.mp3', undefined, base),
+    ['https://r2.example.com/lwt-gospel/00.mp3']
+  )
+})
+
+test('resolveAudioSources: http 절대 URL을 그대로 돌려준다', () => {
+  assert.deepEqual(
+    resolveAudioSources('http://media.example.com/lwt-gospel/00.mp3', undefined, base),
+    ['http://media.example.com/lwt-gospel/00.mp3']
+  )
+})
+
+test('resolveAudioSources: 절대 URL에는 지역 미러를 적용하지 않는다', () => {
+  assert.deepEqual(
+    resolveAudioSources('https://r2.example.com/lwt-gospel/00.mp3', 'cn', base),
+    ['https://r2.example.com/lwt-gospel/00.mp3']
+  )
+})
