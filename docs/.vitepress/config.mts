@@ -29,9 +29,22 @@ export default defineConfig({
   description: 'An Open Journey Through the Gospel',
   cleanUrls: true,
   lastUpdated: true,
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'Gospel Journey' }],
+    ['meta', { property: 'og:title', content: 'Gospel Journey' }],
+    ['meta', { property: 'og:description', content: 'An Open Journey Through the Gospel' }],
+    ['meta', { property: 'og:url', content: 'https://gospeljourney.github.io/' }],
+    ['meta', { property: 'og:image', content: 'https://gospeljourney.github.io/og-image.png' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }]
+  ],
 
   themeConfig: {
     siteTitle: 'Gospel Journey',
+    logo: '/brand/symbol-compact.svg',
 
     nav,
 
