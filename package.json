@@ -10,7 +10,8 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "test": "node --test \"scripts/**/*.test.mjs\""
+    "test": "node --test \"scripts/**/*.test.mjs\"",
+    "content:check": "node scripts/validate-content.mjs"
   },
   "devDependencies": {
     "gray-matter": "^4.0.3",
