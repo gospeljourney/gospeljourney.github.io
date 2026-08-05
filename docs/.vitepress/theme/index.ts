@@ -11,7 +11,7 @@ export default {
   extends: DefaultTheme,
   Layout: () =>
     h(DefaultTheme.Layout, null, {
-      'layout-bottom': () => h(LessonAudio)
+      'doc-after': () => h(LessonAudio)
     }),
   enhanceApp({ app }) {
     app.component('KoreanHome', KoreanHome)
