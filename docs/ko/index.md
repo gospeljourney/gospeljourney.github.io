@@ -13,9 +13,6 @@ hero:
     - theme: brand
       text: 과정 살펴보기
       link: /ko/courses/lwt-gospel/
-    - theme: alt
-      text: GitHub에서 보기
-      link: https://github.com/gospeljourney/gospeljourney.github.io
 
 features:
   - title: 한국어 원문
