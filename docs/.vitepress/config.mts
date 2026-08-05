@@ -50,13 +50,6 @@ export default defineConfig({
 
     sidebar: buildSidebar(courses, { locale: 'ko' }),
 
-    socialLinks: [
-      {
-        icon: 'github',
-        link: 'https://github.com/gospeljourney'
-      }
-    ],
-
     outline: {
       label: '이 페이지의 내용',
       level: [2, 3]
