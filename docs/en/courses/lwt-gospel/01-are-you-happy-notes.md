@@ -8,7 +8,7 @@ translationStatus: reviewed
 course: lwt-gospel
 lesson: 1
 sourceRevision: 1
-updated: 2026-08-06
+updated: 2026-08-07
 kind: notes
 lessonRef: ./01-are-you-happy
 audio:
@@ -26,7 +26,7 @@ audio:
 
 ### Why We Are Not Happy
 
-The lecture begins by pointing out that many people, even after earning money or getting married, still find their hearts unfulfilled. It gives the example of a married couple whose feelings toward each other had grown cold after many years of marriage. The lecture describes this state — people pursuing happiness yet wandering unfulfilled — as "the frenzied scene of the world," and says Scripture teaches us the root cause. That cause is a broken relationship with God, and the lecture calls this the master key that unlocks every problem in life.
+The lecture begins by pointing out that many people, even after earning money or getting married, still find their hearts unfulfilled. It gives the example of a married couple whose feelings toward each other had grown cold after many years of marriage. The lecture describes this state — people pursuing happiness yet wandering unfulfilled — as "a frenzied scene playing out across the world," and says Scripture teaches us the root cause. That cause is a broken relationship with God, and the lecture calls this the master key that unlocks every problem in life.
 
 The fact that there are people who are genuinely happy without money, even with enemies, even without having achieved their dreams, shows that human unhappiness is not rooted in outward circumstances but in being cut off from God, the Creator and source of life, the lecture explains.
 
@@ -92,7 +92,7 @@ The lecture asks: "Isn't this true for you as well?" Do worry, anxiety, and fear
 
 ### Faith as the Restoration of a Relationship
 
-The lecture says that if these problems arose from a broken relationship with God, then having faith is not fundamentally about attending church, but about restoring that broken relationship with God. Because humanity originally belonged within God, having faith is not meeting God for the first time but meeting him again. The lecture references the hymn "Amazing Grace" (hymn 405 in the Korean hymnal, known there by its opening line, "who saved a sinner like me") and compares the relief of finding again what was once lost to someone who has been away from home for a long time finally being held again in their mother's arms.
+The lecture says that if these problems arose from a broken relationship with God, then having faith is not fundamentally about attending church, but about restoring that broken relationship with God. Because humanity originally belonged within God, having faith is not meeting God for the first time but meeting him again. The lecture references the hymn "Amazing Grace" and compares the relief of finding again what was once lost to someone who has been away from home for a long time finally being held again in their mother's arms.
 
 ### Jesus Christ, the Only Way to Restore the Relationship
 

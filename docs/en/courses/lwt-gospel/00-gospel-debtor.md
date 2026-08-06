@@ -8,7 +8,7 @@ translationStatus: reviewed
 course: lwt-gospel
 lesson: 0
 sourceRevision: 1
-updated: 2026-08-06
+updated: 2026-08-07
 kind: lesson
 notes: ./00-gospel-debtor-notes
 audio:
@@ -50,7 +50,7 @@ The purpose for which Jesus saved us is to bear fruit. This means carrying out t
 
 ### Reflection Questions
 
-Q. Paul's life goal was "to bear fruit." The true purpose of a saved person's life is to bear fruit for the kingdom of God. If I died today, what fruit could I bring before God? Reflect deeply before God and write down what the Lord shows your heart.
+Q. Paul's life goal was "to bear fruit." The true purpose of a saved person's life is to bear fruit for the kingdom of God. If I died today, what fruit could I bring before God? Reflect deeply before God and write down what the Lord lays on your heart.
 
 ## 3. Debtor to the Gospel
 

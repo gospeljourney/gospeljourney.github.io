@@ -18,10 +18,10 @@ hero:
       link: https://github.com/gospeljourney/gospeljourney.github.io
 
 features:
-  - title: Translated from the Korean original
-    details: This course is a reviewed translation. The Korean edition remains the source of truth for meaning and revisions.
+  - title: Follows the Korean edition
+    details: These lessons follow the Korean edition, lesson by lesson. Where the two differ in meaning, the Korean text is the one to trust.
   - title: Markdown-first
-    details: Course material is published as Markdown that is easy to read, review, and carry forward.
-  - title: Growing lesson by lesson
-    details: English lessons are added once the corresponding Korean lesson is reviewed and stable.
+    details: Course material is published as clear, well-organized Markdown that is easy to read and carry forward.
+  - title: Lesson and notes, together
+    details: Each lesson comes with its own lecture notes, matched section by section so you can follow along easily.
 ---

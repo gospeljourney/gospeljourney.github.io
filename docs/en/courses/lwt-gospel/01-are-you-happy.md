@@ -8,7 +8,7 @@ translationStatus: reviewed
 course: lwt-gospel
 lesson: 1
 sourceRevision: 1
-updated: 2026-08-06
+updated: 2026-08-07
 kind: lesson
 notes: ./01-are-you-happy-notes
 audio:
@@ -72,7 +72,7 @@ At the center of a person is the spirit. That spirit is the breath of God.
 
 **Genesis 2:7**
 
-The human body was formed from the dust of the earth. But when God's breath was breathed into its center as spirit, a person bearing the image of God was formed. Because the body came from the earth, it lives on the strength of food that comes from the earth. But because the spirit came from God, it can only live by feeding on the word and grace that come from God alone.
+The human body was formed from the dust of the earth. But when God breathed his own breath into that body as spirit, a person bearing the image of God came into being. Because the body came from the earth, it lives on the strength of food that comes from the earth. But because the spirit came from God, it can only live by feeding on the word and grace that come from God alone.
 
 Here we can find the source of the deep "emptiness" people feel. However much of the world's things a person pours into their soul, that deep soul is never filled. That is why a person can gain the world's power and wealth, achieve every wish, and still never find true satisfaction — because the deep center of a person's soul can only be filled by meeting God.
 
@@ -124,7 +124,7 @@ Q. How did the father treat his returning son? Read verses 22-24 and answer.
 
 **Luke 15:22-24**
 
-The father took off his son's ragged, filthy clothes and dressed him in the finest robe. This means restoring the honored status of a child. He put a ring on his son's hand. This means being brought back into a covenant relationship — a relationship in which he would receive back all of his father's inheritance and recover everything he had lost. He put sandals on his son's feet. This is comfort, covering feet that had been wounded from living in this world. In the same way, when we come into God, there is boundless love and comfort waiting for us. And they killed the fattened calf and held a feast. This means the restoration of joy, and the promise of receiving heaven's abundant grace. True faith is joy. It is also receiving and enjoying the abundant grace of heaven. Only then does deep peace and contentment arise in the heart.
+The father took off his son's ragged, filthy clothes and dressed him in the finest robe. This means restoring the honored status of a child. He put a ring on his son's hand. This means being brought back into a covenant relationship — a relationship in which he would receive back all of his father's inheritance and recover everything he had lost. He put sandals on his son's feet. This is comfort, covering feet that had been wounded from living in this world. In the same way, when we return to God, we find boundless love and comfort waiting for us. And they killed the fattened calf and held a feast. This means the restoration of joy, and the promise of receiving heaven's abundant grace. True faith is joy. It is also receiving and enjoying the abundant grace of heaven. Only then does deep peace and contentment arise in the heart.
 
 ## 4. How Can We Receive This Saving Grace?
 
@@ -132,9 +132,9 @@ The father took off his son's ragged, filthy clothes and dressed him in the fine
 
 First, we must repent of the life we lived as our own master. When we hear the word "sin," we usually think first of moral wrongs. But there is a spiritual sin, a root sin. It is the sin of pushing God out of the center of our hearts. Even someone who has attended church their whole life is no different from the prodigal son if God was never truly at the center of their heart. We must repent of this root sin of the heart.
 
-And we must believe in Jesus Christ as our Savior and Lord. "Jesus" means "Savior." The Savior God sent to save me from sin is Jesus Christ himself. God sent his Son into the world to save me; his Son bore my sin in my place, died on the cross, and rose again. To believe this is to believe in him as Savior. We must also now welcome Jesus as our Lord. We cannot live this life by our own strength alone. Only Jesus, as our Master, can lead us.
+And we must believe in Jesus Christ as our Savior and Lord. "Jesus" means "Savior." The Savior God sent to save me from sin is Jesus Christ himself. God sent his Son into the world to save me; his Son bore my sin in my place, died on the cross, and rose again. To believe this is to believe in him as Savior. We must also now receive Jesus as our Lord. We cannot live this life by our own strength alone. Only Jesus, as our Master, can lead us.
 
-Once we have welcomed Jesus as Savior and Lord in this way, Jesus is now our Master. Now we must resolve to live with Jesus as our Master, according to his will. To do this, we should attend church, worship God, learn his word, and live as his children.
+Once we have received Jesus as Savior and Lord in this way, Jesus is now our Master. Now we must resolve to live with Jesus as our Master, according to his will. To do this, we should attend church, worship God, learn his word, and live as his children.
 
 ### Reflection Questions
 
@@ -144,4 +144,4 @@ If you answered yes, please pray the following prayer with all your heart.
 
 (Read this meditatively, twenty times.)
 
-Loving God, until now I have pushed you out and lived as my own master, insisting on my own way. And so my heart has known no true peace, but has lived in fear, anxiety, worry, discouragement, and despair. I have also served idols other than you and lived according to the desires of the flesh. I believe that Jesus died for my sins and rose again as my Savior. I now repent of having made myself the master of my life, and I welcome Jesus as my King and Savior. Wash my sins in the blood of Jesus and fill me with the Holy Spirit. And help me from now on to live in obedience to your will. In Jesus' name I pray. Amen.
+Loving God, until now I have pushed you out and lived as my own master, insisting on my own way. And so my heart has known no true peace, but has lived in fear, anxiety, worry, discouragement, and despair. I have also served idols other than you and lived according to the desires of the flesh. I believe that Jesus died for my sins and rose again as my Savior. I now repent of having made myself the master of my life, and I receive Jesus as my King and Savior. Wash my sins in the blood of Jesus and fill me with the Holy Spirit. And help me from now on to live in obedience to your will. In Jesus' name I pray. Amen.

@@ -8,7 +8,7 @@ translationStatus: reviewed
 course: lwt-gospel
 lesson: 2
 sourceRevision: 1
-updated: 2026-08-06
+updated: 2026-08-07
 kind: notes
 lessonRef: ./02-power-of-the-gospel
 audio:
@@ -74,7 +74,7 @@ The lecture says that anyone who lives cut off from God and dies in that state c
 
 <AudioCue t="25:33" note="#second-life-listen-from-around-the-25-minute-mark-of-the-sermon-and-summarize-what-you-hear" />
 
-The lecture says that life is given next to those who have received the forgiveness of sin. Based on Romans 5:18, it explains that through one righteous act, many are made righteous and connected to the life of God. The lecture says this life is hard to understand for someone who has never experienced it, and gives the example of durian, a tropical fruit — no matter how much you describe it, you cannot really know it without tasting it, and the same is true of God's life flowing into a person. When the Holy Spirit comes in and brings a deeply dead spirit to life, peace and joy well up from that very place, the lecture explains.
+The lecture says that life is given next to those who have received the forgiveness of sin. Based on Romans 5:18, it explains that through one righteous act, many are made righteous and connected to the life of God. The lecture says this life is hard to understand for someone who has never experienced it, and gives the example of durian, a tropical fruit — no matter how much you describe it, you cannot really know it without tasting it, and the same is true of God's life flowing into a person. When the Holy Spirit comes in and brings back to life a spirit that had been dead deep within, peace and joy well up from that very place, the lecture explains.
 
 Based on John 4:13-14, the lecture describes this life as living water — a spring that wells up from within, eternally. It says that people carry not only physical thirst but an inner thirst that is never satisfied, and that chasing success or pleasure does not quench it. The lecture explains that this living water is the Holy Spirit, and that the Spirit becomes the water of life that satisfies our true spiritual thirst.
 

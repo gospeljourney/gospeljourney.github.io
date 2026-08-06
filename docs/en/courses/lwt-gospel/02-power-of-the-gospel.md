@@ -8,7 +8,7 @@ translationStatus: reviewed
 course: lwt-gospel
 lesson: 2
 sourceRevision: 1
-updated: 2026-08-06
+updated: 2026-08-07
 kind: lesson
 notes: ./02-power-of-the-gospel-notes
 audio:
@@ -89,7 +89,7 @@ Q. What kind of life is this?
 
 Q. Have you ever drunk the water of this world and experienced a thirst that would not go away? What was it?
 
-Q. Have you experienced, through the gospel, the life that meets Jesus and fills you?
+Q. Through the gospel, have you met Jesus and experienced the life that fills you?
 Write it down.
 
 ## Looking Back
