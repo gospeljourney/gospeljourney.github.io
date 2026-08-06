@@ -11,6 +11,7 @@ import {
   ALL_STATUSES,
   PUBLIC_STATUSES,
 } from './courses.mjs'
+import { LOCALES } from './locales.mjs'
 
 test('toLink: 강의 파일은 확장자를 떼고 앞에 슬래시를 붙인다', () => {
   assert.equal(
@@ -124,6 +125,19 @@ test('loadCourses: courses 디렉터리가 없으면 빈 배열', () => {
   const root = makeDocs({ 'ko/index.md': fm({ title: '홈' }) })
   try {
     assert.deepEqual(loadCourses(root, 'ko'), [])
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('지원 locale은 ko, en, ja이며 콘텐츠 디렉터리가 없어도 빈 과정 목록을 돌려준다', () => {
+  const root = makeDocs({ 'ko/index.md': fm({ title: '홈' }) })
+  try {
+    assert.deepEqual(LOCALES, ['ko', 'en', 'ja'])
+    assert.deepEqual(
+      Object.fromEntries(LOCALES.map((locale) => [locale, loadCourses(root, locale)])),
+      { ko: [], en: [], ja: [] }
+    )
   } finally {
     rmSync(root, { recursive: true, force: true })
   }

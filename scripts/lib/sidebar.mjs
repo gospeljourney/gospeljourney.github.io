@@ -7,7 +7,7 @@ const isPublic = (entry) => PUBLIC_STATUSES.has(entry.translationStatus)
  * 공개 탐색에는 source 와 reviewed 만 노출한다 (ADR-006).
  */
 export function buildSidebar(courses, options = {}) {
-  const { locale = 'ko', notesLabel = '강의 노트' } = options
+  const { locale = 'ko', notesLabel } = options
 
   const groups = courses
     .map((course) => ({

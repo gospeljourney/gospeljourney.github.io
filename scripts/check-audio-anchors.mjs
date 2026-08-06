@@ -4,8 +4,7 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { loadCourses } from './lib/courses.mjs'
-
-const LOCALES = ['ko']
+import { LOCALES } from './lib/locales.mjs'
 
 const root = fileURLToPath(new URL('../', import.meta.url))
 const docsDir = join(root, 'docs')

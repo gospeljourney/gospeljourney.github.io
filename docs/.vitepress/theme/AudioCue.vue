@@ -6,7 +6,7 @@ import { parseTimecode } from '../../../scripts/lib/timecode.mjs'
 import { requestSeek } from './audioStore'
 
 const props = defineProps<{ t: string | number; note?: string }>()
-const { frontmatter } = useData()
+const { frontmatter, theme } = useData()
 
 const seconds = computed(() => parseTimecode(props.t))
 
@@ -22,7 +22,7 @@ const label = computed(() => {
 // 강의에서는 notes 로, 노트에서는 lessonRef 로 간다.
 const counterpart = computed(() => frontmatter.value.notes ?? frontmatter.value.lessonRef)
 const counterpartLabel = computed(() =>
-  frontmatter.value.notes ? '강의 노트에서 자세히' : '교안으로'
+  frontmatter.value.notes ? theme.value.audioCue.notesLink : theme.value.audioCue.lessonLink
 )
 const counterpartHref = computed(() => {
   if (!props.note || !counterpart.value) return null
@@ -38,7 +38,7 @@ function play() {
 <template>
   <p class="audio-cue">
     <button type="button" class="audio-cue__play" @click="play">
-      ▶ 이 부분 듣기 ({{ label }})
+      {{ theme.audioCue.playLabel }} ({{ label }})
     </button>
     <a v-if="counterpartHref" class="audio-cue__link" :href="counterpartHref">
       {{ counterpartLabel }} →

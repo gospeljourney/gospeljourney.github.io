@@ -87,6 +87,30 @@ test('duplicate-id: 같은 id가 두 번 나오면 오류', () => {
   assert.deepEqual(rules(issues), ['duplicate-id'])
 })
 
+test('duplicate-id: 다른 locale에서 같은 id는 별도 검사 호출이면 허용한다', () => {
+  const korean = [course({ lessons: [entry()] })]
+  const english = [
+    course({
+      link: '/en/courses/c/',
+      index: indexEntry({
+        file: 'en/courses/c/index.md',
+        link: '/en/courses/c/',
+        locale: 'en',
+      }),
+      lessons: [
+        entry({
+          file: 'en/courses/c/00-a.md',
+          link: '/en/courses/c/00-a',
+          locale: 'en',
+        }),
+      ],
+    }),
+  ]
+
+  assert.deepEqual(validateCourses(korean, 'ko'), [])
+  assert.deepEqual(validateCourses(english, 'en'), [])
+})
+
 test('course-mismatch: course 값이 디렉터리명과 다르면 오류', () => {
   const issues = validateCourses([
     course({ lessons: [entry({ course: 'other' })] }),
