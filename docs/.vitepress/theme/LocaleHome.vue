@@ -16,6 +16,7 @@ const { frontmatter, theme } = useData()
       'external-link-icon-enabled': theme.externalLinkIcon
     }"
   >
+    <TranslationNotice />
     <VPHomeHero />
     <VPHomeFeatures />
     <VPHomeContent v-if="frontmatter.markdownStyles !== false">
