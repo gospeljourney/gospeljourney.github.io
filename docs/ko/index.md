@@ -1,5 +1,5 @@
 ---
-layout: KoreanHome
+layout: LocaleHome
 description: 복음을 배우고 이해하며 삶으로 살아 내도록 돕는 열린 학습 여정입니다.
 
 hero:

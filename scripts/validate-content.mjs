@@ -2,9 +2,8 @@
 import { fileURLToPath } from 'node:url'
 
 import { loadCourses } from './lib/courses.mjs'
+import { LOCALES } from './lib/locales.mjs'
 import { validateCourses } from './lib/validate.mjs'
-
-const LOCALES = ['ko']
 
 const docsDir = fileURLToPath(new URL('../docs/', import.meta.url))
 

@@ -6,7 +6,7 @@ import { resolveAudioSources } from '../../../scripts/lib/media-resolve.mjs'
 import { mediaBase } from '../media.mts'
 import { audioState } from './audioStore'
 
-const { frontmatter } = useData()
+const { frontmatter, theme } = useData()
 
 const audio = computed(() => frontmatter.value.audio)
 const sources = computed(() =>
@@ -43,8 +43,8 @@ watch(
 <template>
   <div v-if="audio" class="lesson-audio">
     <div v-if="failed" class="lesson-audio__fallback">
-      오디오를 재생할 수 없습니다.
-      <a v-if="downloadHref" :href="downloadHref" download>파일 내려받기</a>
+      {{ theme.lessonAudio.unavailable }}
+      <a v-if="downloadHref" :href="downloadHref" download>{{ theme.lessonAudio.download }}</a>
     </div>
     <audio
       v-else-if="currentSource"
@@ -55,7 +55,7 @@ watch(
       :src="currentSource"
       @error="onError"
     ></audio>
-    <div v-else class="lesson-audio__fallback">오디오 주소가 아직 설정되지 않았습니다.</div>
+    <div v-else class="lesson-audio__fallback">{{ theme.lessonAudio.unconfigured }}</div>
   </div>
 </template>
 

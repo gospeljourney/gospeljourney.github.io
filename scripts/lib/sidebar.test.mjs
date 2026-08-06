@@ -79,7 +79,7 @@ test('buildSidebar: source와 reviewed만 노출한다', () => {
 test('buildSidebar: 같은 lesson 번호의 노트를 강의 하위에 중첩한다', () => {
   const result = buildSidebar([
     course({ lessons: [lesson({ n: 0 })], notes: [note({ n: 0 })] }),
-  ])
+  ], { notesLabel: '강의 노트' })
 
   assert.deepEqual(result['/ko/courses/'][0].items[0].items, [
     { text: '강의 노트', link: '/ko/courses/c/00-l-notes' },
