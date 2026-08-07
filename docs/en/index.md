@@ -13,9 +13,6 @@ hero:
     - theme: brand
       text: Explore the Courses
       link: /en/courses/lwt-gospel/
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/gospeljourney/gospeljourney.github.io
 
 features:
   - title: Follows the Korean edition
