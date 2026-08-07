@@ -9,13 +9,7 @@ outline: false
 footer: false
 ---
 
-<script setup lang="ts">
-import { onMounted } from 'vue'
-
-onMounted(() => {
-  window.location.replace('/ko/')
-})
-</script>
+<RootLocaleRedirect />
 
 <section class="entry-page" aria-live="polite">
   <h1>Gospel Journey</h1>

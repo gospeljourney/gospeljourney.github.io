@@ -63,6 +63,12 @@
   border-radius: 0.2rem;
 }
 
+.VPNavBarTranslations,
+.VPNavScreenTranslations,
+.VPNavBarExtra .group.translations {
+  display: none !important;
+}
+
 @media (max-width: 640px) {
   .VPHomeHero .name,
   .VPHomeHero .text {

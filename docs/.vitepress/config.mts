@@ -37,6 +37,7 @@ const localeText = {
     returnToTop: '맨 위로',
     sidebarMenu: '메뉴',
     darkMode: '화면 테마',
+    languageMenuLabel: '언어 변경',
     translationNotice: '',
     translationNoticeLabel: '',
     audioCue: { notesLink: '강의 노트에서 자세히', lessonLink: '교안으로', playLabel: '▶ 이 부분 듣기' },
@@ -55,6 +56,7 @@ const localeText = {
     returnToTop: 'Return to top',
     sidebarMenu: 'Menu',
     darkMode: 'Appearance',
+    languageMenuLabel: 'Change language',
     // Temporary wording: revised per Issue #48 review; owner confirmation still pending (see report for alternate candidates).
     translationNotice: "This page isn't available in English. You can read the Korean text shown below.",
     translationNoticeLabel: 'Translation notice',
@@ -75,6 +77,8 @@ const localeText = {
     returnToTop: 'トップに戻る',
     sidebarMenu: 'メニュー',
     darkMode: '外観',
+    // 임시값: 소유자 확인 전의 일본어 언어 메뉴 문구다.
+    languageMenuLabel: '言語を変更',
     // 임시값: Issue #48 검토로 문구와 敬語 등급을 개정했으나 소유자 확인 전이다 (보고서에 대안 후보 있음).
     translationNotice: 'このページの日本語訳はありません。下に表示している韓国語の本文を読むことができます。',
     translationNoticeLabel: '翻訳のお知らせ',
@@ -105,6 +109,7 @@ function themeConfigFor(locale: (typeof LOCALES)[number]) {
     returnToTopLabel: text.returnToTop,
     sidebarMenuLabel: text.sidebarMenu,
     darkModeSwitchLabel: text.darkMode,
+    languageMenuLabel: text.languageMenuLabel,
     translationNotice: text.translationNotice,
     translationNoticeLabel: text.translationNoticeLabel,
     audioCue: text.audioCue,
