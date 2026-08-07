@@ -4,7 +4,15 @@
 
 ## Current language scope
 
-Korean is the source of truth for the site and is the only language currently published for visitors. Future translations will be added only after they are ready for public review; do not treat `/en/`, `/ja/`, or `/zh/` as available site paths.
+Korean is the source of truth. When translations differ in meaning, the Korean text is the one to trust.
+
+| Path | What visitors see |
+| --- | --- |
+| `/ko/` | Korean, the original text |
+| `/en/` | English translation of the course |
+| `/ja/` | Japanese home page. Course pages show the Korean text with a note in Japanese, because the Japanese translation is not ready |
+
+Chinese is not part of the current scope. That is a decision about where to start, not a decision to leave it out for good.
 
 ## Requirements
 
@@ -54,5 +62,7 @@ After a successful deployment, verify the site in a browser:
 
 1. Open [https://gospeljourney.github.io/](https://gospeljourney.github.io/). The entry page should take visitors to the Korean site.
 2. Open [https://gospeljourney.github.io/ko/](https://gospeljourney.github.io/ko/) directly. It should show the Korean home page.
+3. Open [https://gospeljourney.github.io/en/](https://gospeljourney.github.io/en/). It should show the English home page, and the course pages under it should be in English.
+4. Open [https://gospeljourney.github.io/ja/](https://gospeljourney.github.io/ja/). It should show the Japanese home page. Open a course page under it: the lesson text stays Korean and carries a note in Japanese. That is the expected behaviour, not a failure.
 
-These checks verify both the public entry path and the currently supported Korean path.
+These checks cover the public entry path and each of the three language paths, including the case where a page is served in Korean because its translation is not ready.
