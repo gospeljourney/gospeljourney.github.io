@@ -7,7 +7,7 @@ sourceLocale: ko
 translationStatus: reviewed
 course: lwt-gospel
 lesson: 2
-sourceRevision: 1
+sourceRevision: 2
 updated: 2026-08-07
 kind: notes
 lessonRef: ./02-power-of-the-gospel
@@ -38,7 +38,7 @@ The Greeks sought wisdom. The lecture explains that for two or three hundred yea
 
 ### Why He Was Not Ashamed, Even So
 
-Based on 1 Corinthians 1:18 and 1:24, the lecture explains that the message of the cross is foolishness to those who are perishing, but to those being saved, it is the power of God. The same gospel of the cross sounds foolish to some, but for those who repent and receive it, it works as a powerful force of God. At this point the lecture mentions a Greek transliteration, "dynamis," and explains it as the power of God. (This Korean phonetic rendering is what survived in the automatic transcription; the exact original-language spelling cannot be confirmed from this recording alone.) Paul proclaimed this word with the conviction that, whether people liked it or not, the gospel alone has the power to bring life, the lecture explains.
+Based on 1 Corinthians 1:18 and 1:24, the lecture explains that the message of the cross is foolishness to those who are perishing, but to those being saved, it is the power of God. The same gospel of the cross sounds foolish to some, but for those who repent and receive it, it works as a powerful force of God. At this point the lecture mentions a Korean phonetic rendering, "dynamis," and explains it as the power of God. (This Korean phonetic rendering is what survived in the automatic transcription; the exact original-language spelling cannot be confirmed from this recording alone.) Paul proclaimed this word with the conviction that, whether people liked it or not, the gospel alone has the power to bring life, the lecture explains.
 
 ### A Personal Struggle with Shame
 
