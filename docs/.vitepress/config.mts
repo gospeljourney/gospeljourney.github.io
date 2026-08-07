@@ -55,9 +55,9 @@ const localeText = {
     returnToTop: 'Return to top',
     sidebarMenu: 'Menu',
     darkMode: 'Appearance',
-    // Temporary wording: owner confirmation remains pending in Issue #48.
-    translationNotice: 'This page is available in Korean. You can read the Korean version below. An English version is not available.',
-    translationNoticeLabel: 'Translation status',
+    // Temporary wording: revised per Issue #48 review; owner confirmation still pending (see report for alternate candidates).
+    translationNotice: "This page isn't available in English. You can read the Korean text shown below.",
+    translationNoticeLabel: 'Translation notice',
     audioCue: { notesLink: 'More in lecture notes', lessonLink: 'Go to lesson', playLabel: '▶ Listen to this part' },
     lessonAudio: { unavailable: 'Audio could not be played.', download: 'Download file', unconfigured: 'Audio URL is not configured yet.' },
   },
@@ -65,20 +65,20 @@ const localeText = {
     label: '日本語',
     lang: 'ja-JP',
     home: 'ホーム',
-    courses: 'コース',
-    // 임시값: 일본어 notesLabel은 소유자 확인 후 확정한다.
-    notesLabel: 'Lecture notes',
+    courses: '講座',
+    // 임시값: 영어 잔존 오류(#44)를 Issue #48에서 수정했다. 용어 선택은 소유자 확인 전이다.
+    notesLabel: '講義ノート',
     outline: 'このページの内容',
-    prev: '前のページ',
-    next: '次のページ',
+    prev: '前へ',
+    next: '次へ',
     lastUpdated: '最終更新',
     returnToTop: 'トップに戻る',
     sidebarMenu: 'メニュー',
     darkMode: '外観',
-    // 임시값: 일본어 번역 안내 문구는 Issue #48에서 소유자 확인 후 확정한다.
-    translationNotice: 'このページは韓国語でお読みいただけます。以下で韓国語版を読むことができます。日本語版はありません。',
-    translationNoticeLabel: '翻訳状況',
-    audioCue: { notesLink: '講義ノートで詳しく', lessonLink: '教材へ', playLabel: '▶ この部分を聴く' },
+    // 임시값: Issue #48 검토로 문구와 敬語 등급을 개정했으나 소유자 확인 전이다 (보고서에 대안 후보 있음).
+    translationNotice: 'このページの日本語訳はありません。下に表示している韓国語の本文を読むことができます。',
+    translationNoticeLabel: '翻訳のお知らせ',
+    audioCue: { notesLink: '講義ノートで詳しく見る', lessonLink: '講義へ', playLabel: '▶ この部分を聴く' },
     lessonAudio: { unavailable: '音声を再生できません。', download: 'ファイルをダウンロード', unconfigured: '音声のURLはまだ設定されていません。' },
   },
 }
